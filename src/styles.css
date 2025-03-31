@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.category-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.category-btn.completed {
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.switch-btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-container {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.question-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.options li {
+  margin: 5px 0;
+}
+
+.submit-btn {
+  padding: 5px 10px;
+  background: #2196F3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #0d47a1;
+}
+
+.submit-btn:disabled {
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.final-submit-btn {
+  padding: 10px 20px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 20px;
+}
+
+.final-submit-btn:hover {
+  background: #c62828;
+}
+
+.final-submit-btn:disabled {
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.selected-answer {
+  margin-top: 10px;
+  color: #333;
+}
+
+
+/* Final Results Layout */
+.results {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.result-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Space between cards */
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.result-card {
+  background: #f0f4f8;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%; /* Adjust based on number of categories */
+  box-sizing: border-box;
+}
+
+.result-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.result-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Overall Percentage */
+.overall-result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+}
